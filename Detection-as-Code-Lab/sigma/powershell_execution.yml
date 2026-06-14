@@ -1,0 +1,21 @@
+title: PowerShell Execution Detection
+id: 7c5b6d4a-1111-2222-3333-123456789001
+status: experimental
+description: Detect PowerShell execution activity.
+author: Agata Gabara
+date: 2025/06/14
+logsource:
+product: windows
+category: process_creation
+
+detection:
+selection:
+Image|endswith: '\powershell.exe'
+condition: selection
+
+level: medium
+
+tags:
+
+* attack.execution
+* attack.t1059.001

@@ -1,0 +1,23 @@
+title: Account Discovery Detection
+id: 7c5b6d4a-1111-2222-3333-123456789003
+status: experimental
+description: Detect account discovery commands.
+author: Agata Gabara
+date: 2025/06/14
+logsource:
+product: windows
+category: process_creation
+
+detection:
+selection:
+Image|endswith:
+- '\whoami.exe'
+- '\net.exe'
+condition: selection
+
+level: medium
+
+tags:
+
+* attack.discovery
+* attack.t1087
