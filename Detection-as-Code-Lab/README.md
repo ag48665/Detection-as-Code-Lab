@@ -29,8 +29,17 @@ Detection-as-Code-Lab
 ```
 
 ---
+## Sigma Rules
 
-## Sigma Rules Included
+- [PowerShell Execution](sigma/powershell_execution.yml)
+- [Command Shell Execution](sigma/cmd_execution.yml)
+- [Account Discovery](sigma/account_discovery.yml)
+- [Failed Logons](sigma/failed_logons.yml)
+- [Privileged Logons](sigma/privileged_logons.yml)
+
+## MITRE Mapping
+
+- [MITRE ATT&CK Coverage](mappings/mitre_mapping.md)
 
 ### PowerShell Execution Detection
 
